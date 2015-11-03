@@ -1,0 +1,25 @@
+{
+  "name": "simple-command-runner",
+  "version": "0.0.1",
+  "description": "an ui to run specified commands",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonchen/simple-command-runner.git"
+  },
+  "author": "Leon Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leonchen/simple-command-runner/issues"
+  },
+  "dependencies": {
+    "koa": "^1.1.1",
+    "koa-bodyparser": "^2.0.1",
+    "koa-jade": "^2.0.0",
+    "koa-router": "^5.2.3"
+  },
+  "homepage": "https://github.com/leonchen/simple-command-runner#readme"
+}

@@ -1,0 +1,9 @@
+extends ./layout.jade
+
+block content
+  h2 Available Commands:
+
+  ul
+    each cmd, name in commands
+      li
+        a(href="/task/"+name)= name

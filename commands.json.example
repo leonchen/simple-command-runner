@@ -1,0 +1,9 @@
+{
+  "tailSysLog": {
+    "cwd": "/",
+    "command": "tail",
+    "args": ["-f", "/var/log/system.log"],
+    "form": { },
+    "envs": { }
+  }
+}

@@ -1,0 +1,22 @@
+extends ./layout.jade
+
+block content
+  h3= "Run "+name
+
+  form(method="POST" action="/run")
+    input(name="command" type="hidden" value=name)
+
+    each config, name in command.form
+      p
+        label= name+": "
+        case config.type
+          when "text"
+            textarea(name=name)
+          when "select"
+            select(name=name)
+              each opt in config.options 
+                option(value=opt)= opt
+          default
+            input(type="text" name=name)
+
+    button(type="submit") Run
